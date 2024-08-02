@@ -9,3 +9,4 @@ Este projeto é uma recriação da página do desafio "Explore Sem Limites" do c
 ## Links
 
 - [Link do Desafio no Figma](https://efficient-sloth-d85.notion.site/Desafio-Explore-sem-limites-f1b3f32a19994b03bf5df58710b6adf5)
+- [Link do Desafio Pronto](https://angelobonetti.github.io/Desafio-ExploreSemLimites/)

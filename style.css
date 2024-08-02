@@ -1,0 +1,357 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+
+.mulish-<uniquifier> {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --cor-fonte-rosa: #B52184;
+    --cor-fonte-roxo: #312D64;
+    --cor-fraca-fundo: #F9F4FB;
+    --cor-fraca-fundo-linear: #343193;
+    --cor-forte-fundo-linear: #302C63;
+    --cor-borda: #312D64;
+
+
+    font-family: "Mulish", sans-serif;
+}
+
+h1,
+h2 {
+    color: var(--cor-fonte-rosa);
+    font-weight: 900;
+}
+
+p,
+input,
+textarea {
+    color: var(--cor-fonte-roxo);
+    font-weight: 600;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.7rem;
+    background-color: var(--cor-fraca-fundo);
+    padding-bottom: 9.3rem;
+}
+
+.astronauta img {
+    width: 36.4rem;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+header div p {
+    font-size: 2rem;
+}
+
+.seta {
+    text-align: center;
+}
+
+/* Main */
+
+main {
+    background: linear-gradient(var(--cor-fraca-fundo-linear) 0%, var(--cor-forte-fundo-linear) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 5.2rem 0;
+}
+
+main div {
+    width: 35rem;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+main div img {
+    width: 8rem;
+    padding-bottom: 3.3rem;
+}
+
+main div h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+main div p {
+    font-size: 1.6rem;
+    width: 26.6rem;
+    font-family: "Mulish", sans-serif;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-fraca-fundo);
+}
+
+.formulario {
+    background-color: var(--cor-fraca-fundo);
+    padding: 7.6rem 4rem 6.5rem;
+    max-width: 600px;
+}
+
+.formulario h2 {
+    font-size: 3.2rem;
+    padding-bottom: 4.3rem;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.formulario label {
+    position: absolute;
+    z-index: -1;
+}
+
+.formulario form input,
+textarea {
+    padding: 1.2rem 1.6rem;
+    border-radius: 1.6rem;
+    border: 1.5px solid var(--cor-borda);
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    background-color: var(--cor-fraca-fundo);
+
+}
+
+#nome {
+    background-image: url(./image/icone-pessoa.svg);
+    background-repeat: no-repeat;
+    background-position: 1rem;
+
+}
+
+#email {
+    background-image: url(./image/icone-email.svg);
+    background-repeat: no-repeat;
+    background-position: 1rem;
+}
+
+.formulario form input::placeholder {
+    color: var(--cor-fonte-roxo);
+    padding-left: 2.5rem;
+}
+
+.formulario form textarea {
+    color: var(--cor-fonte-roxo);
+    height: 12.6rem;
+}
+
+button {
+    background: linear-gradient(var(--cor-fraca-fundo-linear) 0%, var(--cor-forte-fundo-linear) 100%);
+    color: #FFFFFF;
+    padding: 1.6rem;
+    width: 15rem;
+    border: none;
+    border-radius: 1.6rem;
+}
+
+.fundo {
+    display: none;
+}
+
+.criador {
+    background: linear-gradient(var(--cor-fraca-fundo-linear) 0%, var(--cor-forte-fundo-linear) 100%);
+    padding: 2rem
+}
+
+.criador p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+
+
+/*---------------- Media ---------------- */
+
+@media (max-width: 380px) {
+    .astronauta img {
+        width: 250px;
+    }
+}
+
+main div {
+    width: 30rem;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    header {
+        display: flex;
+        gap: 2.8rem;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: center;
+
+    }
+
+    .header-container {
+        height: 35rem;
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-container div p {
+        font-size: 2rem;
+    }
+
+    .astronauta img {
+        width: 500px;
+    }
+
+    .seta {
+        text-align: start;
+        padding: 3rem 0 3.3rem;
+
+    }
+
+    /* Main */
+
+    main {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    /* footer */
+
+    .formulario {
+        margin: auto;
+    }
+}
+
+@media (min-width: 1360px) {
+
+    h1 {
+        font-size: 5.9rem;
+    }
+
+
+    /* Header */
+
+    header {
+        display: flex;
+        gap: 0;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: center;
+
+
+    }
+
+    .header-container {
+        height: 37.1rem;
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-container div p {
+        font-size: 3.2rem;
+    }
+
+    .astronauta img {
+        width: 720px;
+    }
+
+    .seta {
+        text-align: start;
+        padding: 17.9rem 0 3.3rem;
+
+    }
+
+    /* Main */
+
+    main {
+        flex-direction: row;
+        gap: 6rem;
+        justify-content: center;
+    }
+
+    main div {
+        width: 36.6rem;
+
+
+    }
+
+    main div img {
+        width: 9.7rem;
+        padding-bottom: 4rem;
+    }
+
+    main div h2 {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+    }
+
+    main div p {
+        font-size: 1.9rem;
+        width: 32rem;
+        font-family: "Mulish", sans-serif;
+    }
+
+    /* Footer */
+
+    .container-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario {
+        padding-bottom: 9.5rem;
+    }
+
+    .formulario form {
+        width: 595px;
+    }
+
+    .fundo {
+        display: block;
+
+    }
+
+    .fundo img{
+        height: 100%;
+    }
+
+
+}
